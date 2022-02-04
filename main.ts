@@ -156,3 +156,138 @@ picnicfood.setImage(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     `)
+let food_image = [
+img`
+    . . . . . . . 6 . . . . . . . . 
+    . . . . . . 8 6 6 . . . 6 8 . . 
+    . . . e e e 8 8 6 6 . 6 7 8 . . 
+    . . e 2 2 2 2 e 8 6 6 7 6 . . . 
+    . e 2 2 4 4 2 7 7 7 7 7 8 6 . . 
+    . e 2 4 4 2 6 7 7 7 6 7 6 8 8 . 
+    e 2 4 5 2 2 6 7 7 6 2 7 7 6 . . 
+    e 2 4 4 2 2 6 7 6 2 2 6 7 7 6 . 
+    e 2 4 2 2 2 6 6 2 2 2 e 7 7 6 . 
+    e 2 4 2 2 4 2 2 2 4 2 2 e 7 6 . 
+    e 2 4 2 2 2 2 2 2 2 2 2 e c 6 . 
+    e 2 2 2 2 2 2 2 4 e 2 e e c . . 
+    e e 2 e 2 2 4 2 2 e e e c . . . 
+    e e e e 2 e 2 2 e e e c . . . . 
+    e e e 2 e e c e c c c . . . . . 
+    . c c c c c c c . . . . . . . . 
+    `,
+img`
+    . . . . . . b b b b a a . . . . 
+    . . . . b b d d d 3 3 3 a a . . 
+    . . . b d d d 3 3 3 3 3 3 a a . 
+    . . b d d 3 3 3 3 3 3 3 3 3 a . 
+    . b 3 d 3 3 3 3 3 b 3 3 3 3 a b 
+    . b 3 3 3 3 3 a a 3 3 3 3 3 a b 
+    b 3 3 3 3 3 a a 3 3 3 3 d a 4 b 
+    b 3 3 3 3 b a 3 3 3 3 3 d a 4 b 
+    b 3 3 3 3 3 3 3 3 3 3 d a 4 4 e 
+    a 3 3 3 3 3 3 3 3 3 d a 4 4 4 e 
+    a 3 3 3 3 3 3 3 d d a 4 4 4 e . 
+    a a 3 3 3 d d d a a 4 4 4 e e . 
+    . e a a a a a a 4 4 4 4 e e . . 
+    . . e e b b 4 4 4 4 b e e . . . 
+    . . . e e e e e e e e . . . . . 
+    . . . . . . . . . . . . . . . . 
+    `,
+img`
+    . . . . . . . . . . . 6 6 6 6 6 
+    . . . . . . . . . 6 6 7 7 7 7 8 
+    . . . . . . 8 8 8 7 7 8 8 6 8 8 
+    . . e e e e c 6 6 8 8 . 8 7 8 . 
+    . e 2 5 4 2 e c 8 . . . 6 7 8 . 
+    e 2 4 2 2 2 2 2 c . . . 6 7 8 . 
+    e 2 2 2 2 2 2 2 c . . . 8 6 8 . 
+    e 2 e e 2 2 2 2 e e e e c 6 8 . 
+    c 2 e e 2 2 2 2 e 2 5 4 2 c 8 . 
+    . c 2 e e e 2 e 2 4 2 2 2 2 c . 
+    . . c 2 2 2 e e 2 2 2 2 2 2 2 e 
+    . . . e c c e c 2 2 2 2 2 2 2 e 
+    . . . . . . . c 2 e e 2 2 e 2 c 
+    . . . . . . . c e e e e e e 2 c 
+    . . . . . . . . c e 2 2 2 2 c . 
+    . . . . . . . . . c c c c c . . 
+    `,
+img`
+    ......................bbb.......
+    ....................bb333b......
+    .................bbb333d33b.....
+    ................bb333333d3a.....
+    ..............bb33332eeeedba....
+    ............bbb333323eee2e3a....
+    ..........bbd333333e22222ed3a...
+    .......bbbdd3333333e22222edda...
+    ......bb3d333333333be222eb3d3a..
+    ...bbb3dd33333333333beeeb33d3a..
+    ..b3ddd33333333333333333333dda..
+    bbddd3333333333333333333333dd3a.
+    b33dddddd3333333333333333333d3a.
+    bb3333333ddddd33333333333333dda.
+    bbbbbbb333dd33dddddddddd3333ddba
+    b55553bbbbbb3333dd33333ddd33dd3a
+    b555555555553bbbbbbbb33333dddd3a
+    bd555555555555555dddbaaaaab3d3ba
+    bb55555555555555555dddddddbb33ba
+    b3bb35555555555d5555d55dddddbbba
+    b33333bbb355dd55555d555ddddddbba
+    b5555d333333bbb35dddddd55ddddbba
+    b5d555dd5553333bbbbb3ddddddddb3a
+    b5d555555555555dd3333bbbbbb3db3a
+    bd5d555555d55555dd555ddbbbbbbb3a
+    bbb55dd555555555555555ddddddbb3a
+    ...bbbbdd555ddd5555ddddddddddb3a
+    .......bbbb555555d5ddd5ddddddb3a
+    ...........bbbb55555555555dd533a
+    ...............bbbbddd5d55d5b3ba
+    ...................bbbbddddb3ba.
+    .......................bbbaaaa..
+    `,
+img`
+    ............3333bb..bb33333.....
+    ........3bb31111d3b311d111d33...
+    .......3bdd11111dbd11d11111113..
+    .......bdddd1111bd11d111dd11113.
+    ......3d111dd111b11d111dd33d11d3
+    ......3d11111dd1d11d111d11d33113
+    ....bb3d111111dd13dd111d1dd3b31b
+    ...b3d3dd111111dd13dd11d1dddbbdb
+    ...3ddd31d111111dd133dddddddb.b.
+    ..311111d1ddd1111dd11dddddd33...
+    ..3111111d111dd111dd1111dd3313..
+    ..bddd1111ddd11dd111d111111113..
+    ..311ddd111dddd11dd11ddd1111ddb.
+    ..31111dd111dddd11dd111dddddddb.
+    ...bd1111d1113ddd11dd1111111d3b.
+    ...4dd1111d1113ddd11ddd111d333b.
+    ..4dbdddd11d11133ddddddddddddb..
+    .4ddbddddd11d111d33ddddddddd3b..
+    .4dddb11ddd11dd111d333dddd3bb...
+    .4dd55b111d11dd11111d3333bbb....
+    .445555b111d11dddd111111ddb.....
+    .4455555bd1d311ddddddddddd3.....
+    .45455555bb1d3111ddddddd113.....
+    .4554555555b333d1111111113......
+    455554555555bbb33d11111d33......
+    4d555545555555dbbb3d11d33.......
+    4dd5555455555ddddd43333.........
+    45dd555544ddddddd4..............
+    .45dd5555d44dddd4...............
+    ..45dd55dddd4444................
+    ...45dd55444....................
+    ....44444.......................
+    `
+]
+let food_text = [
+"strawberry",
+"donut",
+"cherries",
+"cake",
+"ice cream"
+]
+for (let index = 0; index <= 4; index++) {
+    picnicfood.setImage(food_image)
+    pause(100)
+}
